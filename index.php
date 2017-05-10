@@ -12,12 +12,16 @@
 <div style='border: #ED7D2E 2px solid;width: 95%;margin-left: 2%;'>
 <img class = 'newappIcon' src='images/arriba.png' style='width: 66%;''>
 </div>
+
 <br>
+
 <div style='border: #ED7D2E 2px solid;width: 95%;margin-left: 2%;'>
 <h2 style='margin-left: 18%;'>For data scientists</h2>	
 <h2 style="margin-left: 58%;position: absolute;margin-top: -3%;">For IT professinal</h2>
 <table  style='width: 65%;padding-top: 0 !important;position: absolute;'>
+
 <?php
+
  $sql = "SELECT * from servicios";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
@@ -31,6 +35,7 @@
       <td style='width: 10%;'> <?php echo "<img class = 'newappIcon' src='".$row['imagen_servicio']."'> "    ?> </td>
       <td><h1 id = "message"><?php echo $row['nombre_servicio']?></h1>
       <p class='description'></p><?php echo $row['descripcion_servicio']?></td>
+
 	<?php echo "</tr>"; ?>
      <?php
      
@@ -58,6 +63,7 @@
       <td style='width: 10%;'> <?php echo "<img class = 'newappIcon' src='".$row['imagen_servicio']."'> "    ?> </td>
       <td><h1 id = "message"><?php echo $row['nombre_servicio']?></h1>
       <p class='description'></p><?php echo $row['descripcion_servicio']?></td>
+
 	<?php echo "</tr>"; ?>
      <?php
      
@@ -67,7 +73,12 @@
      }
      }
    ?>  
- 
+     
+     
+     
+     
+     
+     
   <?php  
      }
   } else {
@@ -76,8 +87,14 @@
   
   ?>
   
+  
+  
  <?php $conn->close();
- ?> 	
+ ?> 
+
+
+	
+	
 	</div>
 	<br>
 <div style='border: #ED7D2E 2px solid;width: 95%;margin-left: 2%;'>
